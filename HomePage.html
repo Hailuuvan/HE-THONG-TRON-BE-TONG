@@ -1,0 +1,344 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Styles/TemPlate.css">
+    <link rel="stylesheet" href="Styles/FA_THEMES.css">
+</head>
+<body>
+
+
+    <div class="w3-top">
+        <div class="w3-black w3-card" style="display: flex; justify-content: center; align-items: center;">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <div>
+                <h1><img src="Image/LOGO.PNG" alt="logo" style="width:60%"></h1>
+            </div>
+            <div style="display:inline-flex; justify-content: center; align-items: center; white-space: nowrap; ">
+                <a href="#home" class=" w3-button w3-padding-large">TRANG CHỦ</a>
+                <a href="#intro" class=" w3-button w3-padding-large">GIỚI THIỆU</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button w3-padding-large" title="Sensor">CẢM BIẾN <i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button" onclick="goToWeightPage()">Cảm biến cân</a>
+                        <a href="#" class="w3-bar-item w3-button" onclick="goToLowPage()">Cảm biến cạn</a>
+                        <a href="#" class="w3-bar-item w3-button" onclick="goToAllPage()">Tất cả cảm biến</a>
+                    </div>
+                </div>
+                <a href="#search" class=" w3-button w3-padding-large" onclick="goToSearchPage()">TRA CỨU</a>
+                <a href="#info" class=" w3-button w3-padding-large">THÔNG TIN</a>
+                <a href="#contact" class=" w3-button w3-padding-large">LIÊN HỆ</a>
+                <a href="#buy" class=" w3-button w3-padding-large" onclick="goToBuyPage()">SẢN PHẨM</a>
+                <a href="#login" class=" w3-button w3-padding-large" onclick="goToLoginPage()">ĐĂNG NHẬP</a>
+
+            </div>
+
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button w3-padding-large" title="More">MORE<i class="fa fa-caret-down"></i></button>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                        <a href="#" class="w3-bar-item w3-button">Sản phẩm</a>
+                        <a href="#" class="w3-bar-item w3-button">Hình ảnh</a>
+                        <a href="#" class="w3-bar-item w3-button" onclick="goToNotePage()">Ghi chú</a>
+                    </div>
+                </div>
+
+
+            <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small"><i class="fa fa-search"></i></a>
+
+        </div>
+    </div>
+    <!-- Page -->
+    <div class="w3-content" style="max-width:2000px;margin-top:46px" id="home">
+
+        <!-- auto Slideshow -->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Image/spk1.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <p><b><span style="color: RED;">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT TP. HCM</span></b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Image/nenscada.png" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+
+                <p><b><span style="color: RED;">GIAO DIỆN SCADA HỆ THỐNG TRỘN BÊ TÔNG TỰ ĐỘNG</span></b></p>
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Image/nenve.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+
+            </div>
+        </div>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="Image/nenspkt.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-red w3-padding-32 w3-hide-small">
+
+                <p><b>WE LOVE HCMUTE</b></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- GIOI THIEU -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="intro">
+        <h2 class="w3-wide">GIỚI THIỆU</h2>
+        <p class="w3-opacity"><i>HỆ THỐNG SCADA GIÁM SÁT VÀ ĐIỀU KHIỂN TRẠM TRỘN BÊ TÔNG TỰ ĐỘNG</i></p>
+        <p class="w3-justify">
+            Hệ thống trộn bê tông tự động đã được phát triển rất nhiều và có nhiều ứng dụng trong các công trình xây dựng.
+            Hệ thống trộn bê tông tự động được thiết kế để tự động hóa quá trình trộn bê tông, giúp tăng năng suất và giảm thiểu sự cố.
+            Hệ thống bao gồm một máy trộn hay bồn trộn bê tông tự động, hệ thống điều khiển tự động và các thiết bị phụ trợ đi kèm.
+
+            Giao diện điều khiển và giám sát trên SCADA sẽ có các thành phần chính như sau: Bảng điều khiển, Bảng cài đặt thông số, Bảng cài đặt hạn mức.
+            Trong đó bảng điều khiển sẽ có các nút nhấn chọn chế độ Auto hay Manual, các nút Start, Stop, các đèn cảnh báo.
+            Phần bảng điều khiển sẽ có các phần tinh chỉnh như Chế độ trộn khô, Chế độ trộn ướt, số mẻ cần trộn trước khi vận hành.
+            Còn phần hạn mức để setup các thông số trước khi trộn nhóm sẽ đưa ra các giá trị hạn mức cần thiết để vận hành 1 mẻ theo đúng tỉ lệ.
+            Quy trình hoạt động của hệ thống sẽ bao gồm như sau trước khi vận hành ta sẽ tiến hành cài đặt thông số cần thiết và xem xét báo lỗi
+            và điều kiện vận hành của hệ thống nếu không có lỗi và đảm bảo điều kiện vận hành sẽ tiến hành vận hành, ban đầu sẽ cài đặt trộn khô van lấy giá trị hạn mức từ cài đặt
+            tiến hành xả vào bồn cân đủ trọng lượng cài đặt sẽ xả vào băng tải đưa đến bồn trộn các thành phần trộn khô gồm xi măng, cát, đá. Sau khi trộn khô sẽ tiến hành trộn ướt
+            hệ thống sẽ xả nước và xả phụ gia vào bồn cân và khi đủ trọng lượng sẽ xả vào bồn trộn các cảm biến sẽ đặt gần dưới đáy các bồn trộn phát hiện và cảnh báo hết nguyên liệu.
+            Sau khi cân đủ tất cả nguyên liệu tiến hành trộn và xả bồn trộn đưa thành phẩm ra ngoài.
+
+            Tất cả dữ liệu của cảm biến sẽ được đưa lên SQL Sever, có thể truy xuất được dữ liệu và liên kết dữ liệu lên Web Sever để có thể kiếm soát được dữ liệu hệ thống từ xa
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                    <p>SCADA</p>
+                    <img src="Image/nenscada.png" class="w3-round w3-margin-bottom" style="width:80%">
+                </div>
+                <div class="w3-third">
+                    <p>SQL SEVER</p>
+                    <img src="Image/sql.png" class="w3-round w3-margin-bottom" style="width:100%">
+                </div>
+                <div class="w3-third">
+                    <p>WEB SEVER</p>
+                    <img src="Image/web.png" class="w3-round" alt="Random Name" style="width:92%">
+                </div>
+            </div>
+    </div>
+
+    <script>
+        function goToLoginPage() {
+            // Chuyển hướng đến trang đăng nhập khi nhấn vào nút "Quay lại"
+            window.location.href = "Login.aspx";
+        }
+        function goToSenSorPage() {
+            // Chuyển hướng đến trang home"
+            window.location.href = "DuLieuCamBien.aspx";
+        }
+        function goToSearchPage() {
+            // Chuyển hướng đến trang tra cứu"
+            window.location.href = "TraCuuDL.aspx";
+        }
+        function goToLowPage() {
+            // Chuyển hướng đến trang cảm biến cạn
+            window.location.href = "CamBienCan.aspx";
+        }
+        function goToWeightPage() {
+            // Chuyển hướng đến trang Cảm biến cân
+            window.location.href = "DuLieuCamBien.aspx";
+        }
+        function goToAllPage() {
+            // Chuyển hướng đến trang Tổng hợp cb
+            window.location.href = "TatCaCB.aspx";
+        }
+        function goToNotePage() {
+            // Chuyển hướng đến trang Note
+            window.location.href = "ChuThich.html";
+
+        }
+    </script>
+
+    <script>
+        // TỰ ĐỘNG CHUYỂN ẢNH SAU 4S
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!--thong tin -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="info">
+        <h2 class="w3-wide w3-center">THÔNG TIN VỀ CHÚNG TÔI</h2>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-margin-top" style="display: flex; justify-content: center;">
+        <div class="w3-third">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>GVHD</h3>
+                <h4>Nguyen Van Thai, Ph.D.</h4><br>
+                <img src="Image/thai1.png" style="width:30%">
+
+                <p>Department of Automation Control</p>
+                <p>of Ho Chi Minh City University</p>
+                <p>of Technology and Education (HCMUTE)</p>
+                <p>Email: nguyenvanthai@hcmute.edu.vn</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+        <div class="w3-quarter">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Lưu Văn Hải</h3><br>
+                <img src="Image/hai.jpg" style="width:30%">
+                <p>MSSV: 20151171</p>
+                <p>Ho Chi Minh City University</p>
+                <p>of Technology and Education (HCMUTE)</p>
+                <p>Email:20151171@student.hcmute.edu.vn </p>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Lê Văn Lưu</h3><br>
+                <img src="Image/luu.jpg" style="width:30%">
+                <p>MSSV: 20151511</p>
+                <p>Ho Chi Minh City University</p>
+                <p>of Technology and Education (HCMUTE)</p>
+                <p>Email:20151511@student.hcmute.edu.vn </p>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Phạm Minh Khánh</h3><br>
+                <img src="Image/PMK.png" style="width:33%">
+                <p>MSSV: 20151493</p>
+                <p>Ho Chi Minh City University</p>
+                <p>of Technology and Education (HCMUTE)</p>
+                <p>Email:20151493@student.hcmute.edu.vn </p>
+            </div>
+        </div>
+
+        <div class="w3-quarter">
+            <div class="w3-card w3-container" style="min-height:460px">
+                <h3>Nguyễn Phạm Hữu Trung</h3><br>
+
+                <img src="Image/trung.jpg" style="width:30%">
+                <p>MSSV: 20151584</p>
+                <p>Ho Chi Minh City University</p>
+                <p>of Technology and Education (HCMUTE)</p>
+                <p>Email:20151584@student.hcmute.edu.vn </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact  -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">LIÊN HỆ</h2>
+        <p class="w3-opacity w3-center"><i>Hãy liên hệ chúng tôi!</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> TP HCM, VietNam<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +84 934765372<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: nhom7@gmail.com<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="Submit.aspx" method="post">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">GỬI</button>
+                </form>
+            </div>
+        </div>
+        <!-- Google Calendar Appointment Scheduling begin -->
+        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+        <script>
+            (function () {
+                var target = document.currentScript;
+                window.addEventListener('load', function () {
+                    calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0ln5Ykqp4ZO63IH0yINh7GN_v9oheL7YjwP_4nOO5PV0Fy6x_9LBmOBv4WyO2f7N3t88AkbACi?gv=true',
+                        color: '#039BE5',
+                        label: 'Đăng ký cuộc hẹn',
+                        target,
+                    });
+                });
+            })();
+        </script>
+        <!-- end Google Calendar Appointment Scheduling -->
+    </div>
+
+    
+    <!-- MUA SẢN PHẨM-->
+
+    <div class="w3-black w3-container w3-content w3-padding-64" style="max-width:800px" id="buy">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">MUA SẢN PHẨM</h2>
+            <p class="w3-opacity w3-center"><i>Mua tại đây!</i></p><br>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+            <img src="/Image/nenscada.png" alt="Paris" style="width:100%" class="w3-hover-opacity">
+            <div class="w3-container w3-white">
+                <p><b>Hệ thống trộn bê tông tự động</b></p>
+                <p class="w3-opacity">Giảm 5%</p>
+                
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Mua</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+            <header class="w3-container w3-teal w3-center w3-padding-32">
+                <span onclick="document.getElementById('ticketModal').style.display='none'"
+                      class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+                <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>MUA SẢN PHẨM</h2>
+            </header>
+            <div class="w3-container">
+                <p><label><i class="fa fa-shopping-cart"></i> Số lượng</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="How many?">
+                <p><label><i class="fa fa-user"></i> Gửi đến</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="Enter email">
+                <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">THANH TOÁN <i class="fa fa-check"></i></button>
+                <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+                <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+        <i href="https://www.facebook.com/illvanhai" class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <p class="w3-medium">Powered by <a href="NHÓM 7 - SCADA" target="_blank">NHÓM 7 - SCADA</a></p>
+    </footer>
+</body>
+</html >
